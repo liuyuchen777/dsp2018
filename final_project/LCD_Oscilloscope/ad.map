@@ -1,0 +1,109 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Fri Jun 22 09:52:54 2018
+
+OUTPUT FILE NAME:   <ad.out>
+ENTRY POINT SYMBOL: "reset"  address: 00001c00
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: VEC                     00001c00   00000080  00000074  RWIX
+         PROG                    00001d00   00003000  00000804  RWIX
+
+PAGE  1: STACKS                  00000200   00000500  000000c8  RWIX
+         TEMPDATA                00000700   00000500  00000090  RWIX
+         IDATA                   00001000   00000800  00000401  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+vectors    0    00001c00    00000074     
+                  00001c00    00000074     vector.obj (vectors)
+
+.text      0    00001d00    00000000     UNINITIALIZED
+
+prog       0    00001d00    00000804     
+                  00001d00    00000804     ADDALED.obj (prog)
+
+.bss       1    00000000    00000000     UNINITIALIZED
+
+stack_section 
+*          1    00000200    000000c8     UNINITIALIZED
+                  00000200    000000c8     vector.obj (stack_section)
+
+out_vars   1    00000700    00000080     UNINITIALIZED
+                  00000700    00000080     ADDALED.obj (out_vars)
+
+temp       1    00000780    0000000c     UNINITIALIZED
+                  00000780    0000000c     ADDALED.obj (temp)
+
+cr_send    1    0000078c    00000002     UNINITIALIZED
+                  0000078c    00000002     ADDALED.obj (cr_send)
+
+in_vars    1    0000078e    00000001     UNINITIALIZED
+                  0000078e    00000001     ADDALED.obj (in_vars)
+
+pmst       1    0000078f    00000001     UNINITIALIZED
+                  0000078f    00000001     ADDALED.obj (pmst)
+
+.data      1    00001000    00000401     
+                  00001000    00000401     ADDALED.obj (.data)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000000   .bss
+00001000   .data
+00001d00   .text
+ffffffff   ___binit__
+00000000   ___bss__
+ffffffff   ___c_args__
+00001000   ___data__
+00001401   ___edata__
+00000000   ___end__
+00001d00   ___etext__
+00001d00   ___text__
+00000000   __lflags
+ffffffff   binit
+00001401   edata
+00000000   end
+00001d00   etext
+000024df   jump
+00001c00   reset
+00001d00   start
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   ___bss__
+00000000   ___end__
+00000000   end
+00000000   __lflags
+00000000   .bss
+00001000   .data
+00001000   ___data__
+00001401   edata
+00001401   ___edata__
+00001c00   reset
+00001d00   start
+00001d00   etext
+00001d00   ___etext__
+00001d00   ___text__
+00001d00   .text
+000024df   jump
+ffffffff   ___binit__
+ffffffff   binit
+ffffffff   ___c_args__
+
+[19 symbols]

@@ -1,0 +1,53 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\DSP\lcdkey\lcdkey\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="C:\CCStudio_v3.3\C5400\cgtools\lib\rts.lib"
+Source="lcd.c"
+Source="lcd.h"
+Source="ledkey.c"
+Source="ledkey.h"
+Source="main.c"
+Source="vectors.asm"
+Source="lckdkey.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"$(Proj_dir)\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-o2 -fr"$(Proj_dir)\Release"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\lcdkey.map" -o".\Debug\lcdkey.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\lcdkey.map" -o".\Release\lcdkey.out" -w -x
+
+["lcd.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["lcd.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["ledkey.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["ledkey.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["lckdkey.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["lckdkey.cmd" Settings: "Release"]
+LinkOrder=1
+

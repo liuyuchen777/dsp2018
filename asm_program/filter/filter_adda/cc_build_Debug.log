@@ -1,0 +1,16 @@
+------------------------------  adda.pjt - Debug  ------------------------------
+[ad.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -fr"F:/DSP/adda_gai/Debug" -d"_DEBUG" -@"Debug.lkf" "ad.asm"
+
+[vector.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -fr"F:/DSP/adda_gai/Debug" -d"_DEBUG" -@"Debug.lkf" "vector.asm"
+
+[Linking...] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+>> warning: creating output section in_vars without SECTIONS specification
+>> warning: creating output section cr_send without SECTIONS specification
+>> warning: creating output section temp without SECTIONS specification
+>> warning: creating output section filter_vars without SECTIONS specification
+>> warning: creating output section pmst without SECTIONS specification
+>> warning: entry point other than _c_int00 specified
+
+Build Complete,
+  0 Errors, 6 Warnings, 0 Remarks.

@@ -1,0 +1,8 @@
+-----------------------------  filter.pjt - Debug  -----------------------------
+[filter.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -fr"D:/DSP/filter/filter_FIR/Debug" -d"_DEBUG" -@"Debug.lkf" "filter.asm"
+
+[Linking...] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

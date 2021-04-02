@@ -1,0 +1,4 @@
+-z -c -m"./Debug/adda.map" -o"./Debug/adda.out" -w -x -i"C:/CCStudio_v3.1/C5400/xdais/lib" -i"C:/CCStudio_v3.1/C5400/rtdx/lib" -i"C:/CCStudio_v3.1/C5400/csl/lib" -i"C:/CCStudio_v3.1/C5400/bios/lib" -i"C:/CCStudio_v3.1/C5400/cgtools/lib"
+"D:\base\adda\base.cmd"
+"D:\base\adda\Debug\ad.obj"
+"D:\base\adda\Debug\vector.obj"

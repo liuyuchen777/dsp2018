@@ -1,0 +1,117 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Mon Apr 29 21:02:24 2019
+
+OUTPUT FILE NAME:   <ad.out>
+ENTRY POINT SYMBOL: "reset"  address: 00001c00
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: VEC                     00001c00   00000080  00000078  RWIX
+         PROG                    00001d00   00001000  000000ac  RWIX
+
+PAGE  1: STACKS                  00000200   00000300  000000dd  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+vectors    0    00001c00    00000078     
+                  00001c00    00000078     vector.obj (vectors)
+
+prog       0    00001d00    000000ac     
+                  00001d00    000000ac     ad.obj (prog)
+
+.text      1    00000000    00000000     UNINITIALIZED
+
+.data      1    00000000    00000000     UNINITIALIZED
+
+.bss       1    00000000    00000000     UNINITIALIZED
+
+stack_section 
+*          1    00000200    000000c8     UNINITIALIZED
+                  00000200    000000c8     vector.obj (stack_section)
+
+filter_vars 
+*          1    000002c8    00000010     UNINITIALIZED
+                  000002c8    00000010     ad.obj (filter_vars)
+
+cr_send    1    000002d8    00000002     UNINITIALIZED
+                  000002d8    00000002     ad.obj (cr_send)
+
+in_vars    1    000002da    00000001     UNINITIALIZED
+                  000002da    00000001     ad.obj (in_vars)
+
+temp       1    000002db    00000001     UNINITIALIZED
+                  000002db    00000001     ad.obj (temp)
+
+pmst       1    000002dc    00000001     UNINITIALIZED
+                  000002dc    00000001     ad.obj (pmst)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000000   .bss
+00000000   .data
+00000000   .text
+ffffffff   ___binit__
+00000000   ___bss__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+00000000   ___data__
+00000000   ___edata__
+00000000   ___end__
+00000000   ___etext__
+ffffffff   ___pinit__
+00000000   ___text__
+00000000   __lflags
+UNDEFED _c_int00
+ffffffff   binit
+ffffffff   cinit
+00000000   edata
+00000000   end
+00000000   etext
+00001d40   jump
+ffffffff   pinit
+00001c00   reset
+00001d00   start
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   ___etext__
+00000000   ___text__
+00000000   ___edata__
+00000000   ___end__
+00000000   end
+00000000   edata
+00000000   __lflags
+00000000   etext
+00000000   .text
+00000000   ___bss__
+00000000   .bss
+00000000   .data
+00000000   ___data__
+00001c00   reset
+00001d00   start
+00001d40   jump
+ffffffff   pinit
+ffffffff   ___cinit__
+ffffffff   ___c_args__
+ffffffff   ___binit__
+ffffffff   ___pinit__
+ffffffff   cinit
+ffffffff   binit
+UNDEFED _c_int00
+
+[24 symbols]

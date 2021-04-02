@@ -1,0 +1,4 @@
+-z -q -o"./Debug/dsp_prom_17.out" -x -i"e:/ti/c5400/bios/lib" -i"e:/ti/c5400/rtdx/lib" -i"e:/ti/c5400/cgtools/lib"
+"d:\dsp_prom\dsp_asm_4\dsp_prom_17\Debug\FANSE.obj"
+"d:\dsp_prom\dsp_asm_4\dsp_prom_17\Debug\vectors.obj"
+"d:\dsp_prom\dsp_asm_4\dsp_prom_17\FANSE.cmd"

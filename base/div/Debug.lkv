@@ -1,0 +1,3 @@
+-z -q -c -o"./Debug/div.out" -x -i"e:/ti/c5400/bios/lib" -i"e:/ti/c5400/rtdx/lib" -i"e:/ti/c5400/cgtools/lib"
+"E:\dsp_exam\base\div\Debug\div.obj"
+"E:\dsp_exam\base\div\base.cmd"

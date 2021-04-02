@@ -1,0 +1,7 @@
+-z -c -m"./Debug/lcdkey.map" -o"./Debug/lcdkey.out" -w -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"F:\DSP\final_project\singal_generator\lckdkey.cmd"
+"F:\DSP\final_project\singal_generator\Debug\lcd.obj"
+"F:\DSP\final_project\singal_generator\Debug\ledkey.obj"
+"F:\DSP\final_project\singal_generator\Debug\main.obj"
+"F:\DSP\final_project\singal_generator\Debug\vectors.obj"
+"C:\CCStudio_v3.3\C5400\cgtools\lib\rts.lib"

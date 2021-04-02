@@ -1,0 +1,266 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Mon May 27 21:38:01 2019
+
+OUTPUT FILE NAME:   <./Debug/lcdkey.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000697
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: textram                 00000100   00001000  00000926  RWIX
+         vectorram               00001c00   00000080  00000079  RWIX
+
+PAGE  1: dataram                 00001000   00001000  000003e8  RWIX
+         userram                 00002000   00001000  00000cc9  RWIX
+         stackram                00003000   00005000  00005000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00000100    00000926     
+                  00000100    0000018b     lcd.obj (.text)
+                  0000028b    000000af     ledkey.obj (.text)
+                  0000033a    0000035d     main.obj (.text)
+                  00000697    0000004a     rts.lib : boot.obj (.text)
+                  000006e1    00000052             : exit.obj (.text)
+                  00000733    0000009f             : f_add.obj (.text)
+                  000007d2    00000020             : f_cmp.obj (.text)
+                  000007f2    0000009a             : f_div.obj (.text)
+                  0000088c    00000001             : f_error.obj (.text)
+                  0000088d    0000003c             : f_ftoi.obj (.text)
+                  000008c9    00000073             : f_mul.obj (.text)
+                  0000093c    0000001b             : f_utof.obj (.text)
+                  00000957    000000a5             : ldiv.obj (.text)
+                  000009fc    0000000c             : udiv.obj (.text)
+                  00000a08    00000007             : _lock.obj (.text)
+                  00000a0f    00000017             : args_main.obj (.text)
+
+vectors    0    00001c00    00000079     
+                  00001c00    00000079     vectors.obj (vectors)
+
+.data      1    00001000    00000000     UNINITIALIZED
+
+data_buf2 
+*          1    00001000    000003e8     UNINITIALIZED
+                  00001000    000003e8     main.obj (data_buf2)
+
+.cinit     1    00002000    00000856     
+                  00002000    00000846     main.obj (.cinit)
+                  00002846    00000009     rts.lib : exit.obj (.cinit)
+                  0000284f    00000006             : _lock.obj (.cinit)
+                  00002855    00000001     --HOLE-- [fill = 0]
+
+data_buf1 
+*          1    00002856    000003e8     UNINITIALIZED
+                  00002856    000003e8     main.obj (data_buf1)
+
+.bss       1    00002c3e    0000007b     UNINITIALIZED
+                  00002c3e    00000056     main.obj (.bss)
+                  00002c94    00000023     rts.lib : exit.obj (.bss)
+                  00002cb7    00000002             : _lock.obj (.bss)
+
+.const     1    00002cba    0000000c     
+                  00002cba    0000000c     main.obj (.const)
+
+data_seq   1    00002cc6    00000002     UNINITIALIZED
+                  00002cc6    00000002     main.obj (data_seq)
+
+data_gap   1    00002cc8    00000002     UNINITIALIZED
+                  00002cc8    00000002     main.obj (data_gap)
+
+.stack     1    00003000    00005000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00002c3e   .bss
+00001000   .data
+00000100   .text
+00000730   C$$EXIT
+00000733   F$$ADD
+000007d2   F$$COMPARE
+000007f2   F$$DIV
+0000088d   F$$FTOI
+000008c9   F$$MUL
+0000093c   F$$UTOF
+000009fc   I$$UDIV
+00000a01   I$$UMOD
+00000957   L$$DIVS
+000009a7   L$$DIVU
+0000097f   L$$MODS
+000009c3   L$$MODU
+00005000   __STACK_SIZE
+ffffffff   ___binit__
+00002c3e   ___bss__
+ffffffff   ___c_args__
+00002000   ___cinit__
+00001000   ___data__
+00001000   ___edata__
+00002cb9   ___end__
+00000a26   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+00000a0f   __args_main
+00002cb5   __cleanup_ptr
+00002cb6   __dtors_ptr
+00000001   __lflags
+00002cb7   __lock
+00000a08   __nop
+00000a09   __register_lock
+00000a0c   __register_unlock
+00002cb8   __unlock
+00000730   _abort
+0000070e   _atexit
+00000697   _c_int00
+00000386   _calculate_len
+00002c3e   _ch
+00000139   _clc_lcd
+00002c92   _count
+00000100   _delayLcd
+0000028b   _delayLed
+000006e1   _exit
+0000088c   _f$$error
+00002c90   _flag
+00002c8d   _freq
+00002c7a   _freq_str
+00002cc8   _gap
+00002c3f   _hint_str
+00000177   _initLcd
+000002ce   _initLedkey
+0000039e   _int2str
+00000630   _intrClock
+000004e3   _intrFn
+00000249   _lcdDisplayStr
+00000127   _lcdWrite
+000002ea   _ledDisplayCh
+0000030f   _ledDisplayNum
+000002c4   _ledRead
+000002b2   _ledWrite
+0000033a   _main
+00002c70   _nums
+00002c83   _output
+00002c8e   _range
+00002c7e   _range_str
+000003cc   _second_menue
+00002cc6   _seq
+00002c4c   _sin_str
+00002856   _sin_value
+00000436   _sin_wave
+00002c57   _square_str
+00000478   _square_wave
+00002c93   _state
+00002c91   _temp
+00002c65   _tri_str
+00001000   _tri_value
+000004a1   _tri_wave
+00002c8f   _value
+ffffffff   binit
+00002000   cinit
+00001000   edata
+00002cb9   end
+00000a26   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000100   ___text__
+00000100   _delayLcd
+00000100   .text
+00000127   _lcdWrite
+00000139   _clc_lcd
+00000177   _initLcd
+00000249   _lcdDisplayStr
+0000028b   _delayLed
+000002b2   _ledWrite
+000002c4   _ledRead
+000002ce   _initLedkey
+000002ea   _ledDisplayCh
+0000030f   _ledDisplayNum
+0000033a   _main
+00000386   _calculate_len
+0000039e   _int2str
+000003cc   _second_menue
+00000436   _sin_wave
+00000478   _square_wave
+000004a1   _tri_wave
+000004e3   _intrFn
+00000630   _intrClock
+00000697   _c_int00
+000006e1   _exit
+0000070e   _atexit
+00000730   _abort
+00000730   C$$EXIT
+00000733   F$$ADD
+000007d2   F$$COMPARE
+000007f2   F$$DIV
+0000088c   _f$$error
+0000088d   F$$FTOI
+000008c9   F$$MUL
+0000093c   F$$UTOF
+00000957   L$$DIVS
+0000097f   L$$MODS
+000009a7   L$$DIVU
+000009c3   L$$MODU
+000009fc   I$$UDIV
+00000a01   I$$UMOD
+00000a08   __nop
+00000a09   __register_lock
+00000a0c   __register_unlock
+00000a0f   __args_main
+00000a26   ___etext__
+00000a26   etext
+00001000   edata
+00001000   .data
+00001000   ___data__
+00001000   ___edata__
+00001000   _tri_value
+00002000   ___cinit__
+00002000   cinit
+00002856   _sin_value
+00002c3e   .bss
+00002c3e   ___bss__
+00002c3e   _ch
+00002c3f   _hint_str
+00002c4c   _sin_str
+00002c57   _square_str
+00002c65   _tri_str
+00002c70   _nums
+00002c7a   _freq_str
+00002c7e   _range_str
+00002c83   _output
+00002c8d   _freq
+00002c8e   _range
+00002c8f   _value
+00002c90   _flag
+00002c91   _temp
+00002c92   _count
+00002c93   _state
+00002cb5   __cleanup_ptr
+00002cb6   __dtors_ptr
+00002cb7   __lock
+00002cb8   __unlock
+00002cb9   ___end__
+00002cb9   end
+00002cc6   _seq
+00002cc8   _gap
+00005000   __STACK_SIZE
+ffffffff   pinit
+ffffffff   ___binit__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   ___c_args__
+
+[87 symbols]

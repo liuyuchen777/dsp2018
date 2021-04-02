@@ -1,0 +1,4 @@
+-z -q -o"./Debug/dsp_prom_16.out" -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"E:\dsp_prom_16_S\Debug\LCD.obj"
+"E:\dsp_prom_16_S\Debug\vectors.obj"
+"E:\dsp_prom_16_S\LCD.cmd"

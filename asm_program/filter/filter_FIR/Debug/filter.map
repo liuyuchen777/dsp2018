@@ -1,0 +1,87 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Apr 18 16:45:24 2019
+
+OUTPUT FILE NAME:   <./Debug/filter.out>
+ENTRY POINT SYMBOL: "START"  address: 00003000
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: PARAM                   00003000   00004000  0000006e  RWIX
+
+PAGE  1: DARAM                   00000100   00004000  00000340  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00003000    0000006e     
+                  00003000    0000006e     filter.obj (.text)
+
+.bss       1    00000100    00000000     UNINITIALIZED
+
+filter_vars 
+*          1    00000100    00000140     UNINITIALIZED
+                  00000100    00000140     filter.obj (filter_vars)
+
+stack      1    00000240    00000100     UNINITIALIZED
+                  00000240    00000100     filter.obj (stack)
+
+.data      1    00000340    00000100     
+                  00000340    00000100     filter.obj (.data)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000100   .bss
+00000340   .data
+00003000   .text
+00003000   START
+ffffffff   ___binit__
+00000100   ___bss__
+ffffffff   ___c_args__
+00000340   ___data__
+00000440   ___edata__
+00000100   ___end__
+0000306e   ___etext__
+00003000   ___text__
+00000000   __lflags
+ffffffff   binit
+00000440   edata
+00000100   end
+0000306e   etext
+00000340   inputdata
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __lflags
+00000100   ___end__
+00000100   ___bss__
+00000100   end
+00000100   .bss
+00000340   ___data__
+00000340   inputdata
+00000340   .data
+00000440   edata
+00000440   ___edata__
+00003000   .text
+00003000   START
+00003000   ___text__
+0000306e   ___etext__
+0000306e   etext
+ffffffff   ___c_args__
+ffffffff   binit
+ffffffff   ___binit__
+
+[18 symbols]

@@ -1,0 +1,162 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Wed May 15 17:10:15 2019
+
+OUTPUT FILE NAME:   <./Release/lcdkey.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000034e
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: textram                 00000100   00000800  00000308  RWIX
+         vectorram               00001c00   00000080  0000007a  RWIX
+
+PAGE  1: dataram                 00001000   00000200  0000002c  RWIX
+         userram                 00001200   00000400  0000001b  RWIX
+         stackram                00001600   00005000  00005000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00000100    00000308     
+                  00000100    000000f7     lcd.obj (.text)
+                  000001f7    0000005c     ledkey.obj (.text)
+                  00000253    000000fb     main.obj (.text)
+                  0000034e    0000004a     rts.lib : boot.obj (.text)
+                  00000398    00000052             : exit.obj (.text)
+                  000003ea    00000007             : _lock.obj (.text)
+                  000003f1    00000017             : args_main.obj (.text)
+
+vectors    0    00001c00    0000007a     
+                  00001c00    0000007a     vectors.obj (vectors)
+
+.data      1    00001000    00000000     UNINITIALIZED
+
+.bss       1    00001000    0000002c     UNINITIALIZED
+                  00001000    00000007     main.obj (.bss)
+                  00001007    00000023     rts.lib : exit.obj (.bss)
+                  0000102a    00000002             : _lock.obj (.bss)
+
+.cinit     1    00001200    0000001b     
+                  00001200    0000000b     main.obj (.cinit)
+                  0000120b    00000009     rts.lib : exit.obj (.cinit)
+                  00001214    00000006             : _lock.obj (.cinit)
+                  0000121a    00000001     --HOLE-- [fill = 0]
+
+.stack     1    00001600    00005000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00001000   .bss
+00001000   .data
+00000100   .text
+000003e7   C$$EXIT
+00005000   __STACK_SIZE
+ffffffff   ___binit__
+00001000   ___bss__
+ffffffff   ___c_args__
+00001200   ___cinit__
+00001000   ___data__
+00001000   ___edata__
+0000102c   ___end__
+00000408   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+000003f1   __args_main
+00001028   __cleanup_ptr
+00001029   __dtors_ptr
+00000001   __lflags
+0000102a   __lock
+000003ea   __nop
+000003eb   __register_lock
+000003ee   __register_unlock
+0000102b   __unlock
+000003e7   _abort
+000003c5   _atexit
+0000034e   _c_int00
+00001000   _ch
+00001001   _conststr
+00000100   _delayLcd
+000001f7   _delayLed
+00000398   _exit
+00000113   _initLcd
+0000020f   _initLedkey
+00000277   _intrFn
+000001c5   _lcdDisplayStr
+00000101   _lcdWrite
+0000022b   _ledDisplayCh
+0000023b   _ledDisplayNum
+0000020a   _ledRead
+000001f8   _ledWrite
+00000253   _main
+ffffffff   binit
+00001200   cinit
+00001000   edata
+0000102c   end
+00000408   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000100   ___text__
+00000100   _delayLcd
+00000100   .text
+00000101   _lcdWrite
+00000113   _initLcd
+000001c5   _lcdDisplayStr
+000001f7   _delayLed
+000001f8   _ledWrite
+0000020a   _ledRead
+0000020f   _initLedkey
+0000022b   _ledDisplayCh
+0000023b   _ledDisplayNum
+00000253   _main
+00000277   _intrFn
+0000034e   _c_int00
+00000398   _exit
+000003c5   _atexit
+000003e7   C$$EXIT
+000003e7   _abort
+000003ea   __nop
+000003eb   __register_lock
+000003ee   __register_unlock
+000003f1   __args_main
+00000408   etext
+00000408   ___etext__
+00001000   _ch
+00001000   ___bss__
+00001000   ___edata__
+00001000   ___data__
+00001000   edata
+00001000   .data
+00001000   .bss
+00001001   _conststr
+00001028   __cleanup_ptr
+00001029   __dtors_ptr
+0000102a   __lock
+0000102b   __unlock
+0000102c   ___end__
+0000102c   end
+00001200   cinit
+00001200   ___cinit__
+00005000   __STACK_SIZE
+ffffffff   pinit
+ffffffff   ___binit__
+ffffffff   ___pinit__
+ffffffff   ___c_args__
+ffffffff   binit
+
+[48 symbols]

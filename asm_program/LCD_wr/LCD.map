@@ -1,0 +1,89 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Mon Mar 18 19:33:00 2019
+
+OUTPUT FILE NAME:   <LCD.out>
+ENTRY POINT SYMBOL: "RESET"  address: 00001c00
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: VECT                    00001c00   00000080  00000064  RWIX
+         EPROG                   00001d00   00003000  00000118  RWIX
+
+PAGE  1: IDATA                   00000200   00000800  000007e1  RWIX
+         ISTACK                  00001000   00000200  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    00001c00    00000064     
+                  00001c00    00000064     vectors.obj (.vectors)
+
+.text      0    00001d00    00000118     
+                  00001d00    00000118     LCD.obj (.text)
+
+.bss       1    00000000    00000000     UNINITIALIZED
+
+.data      1    00000200    000007e1     
+                  00000200    000007e1     LCD.obj (.data)
+
+.stack     1    00001000    00000000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000000   .bss
+00000200   .data
+00001d00   .text
+00001d08   OPERATION
+00001c00   RESET
+ffffffff   ___binit__
+00000000   ___bss__
+ffffffff   ___c_args__
+00000200   ___data__
+000009e1   ___edata__
+00000000   ___end__
+00001e18   ___etext__
+00001d00   ___text__
+00000000   __lflags
+ffffffff   binit
+000009e1   edata
+00000000   end
+00001e18   etext
+00001d00   start
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __lflags
+00000000   ___end__
+00000000   ___bss__
+00000000   .bss
+00000000   end
+00000200   ___data__
+00000200   .data
+000009e1   edata
+000009e1   ___edata__
+00001c00   RESET
+00001d00   ___text__
+00001d00   .text
+00001d00   start
+00001d08   OPERATION
+00001e18   ___etext__
+00001e18   etext
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   binit
+
+[19 symbols]

@@ -1,0 +1,12 @@
+----------------------------  cexam07.pjt - Debug  ----------------------------
+"e:\ti\c5400\cgtools\bin\cl500" -g -q -fr"D:/20PROM/cexam/cexam07/Debug" -d"_DEBUG" -@"Debug.lkf" "fir.c"
+[fir.c]
+
+"e:\ti\c5400\cgtools\bin\cl500" -g -q -fr"D:/20PROM/cexam/cexam07/Debug" -d"_DEBUG" -@"Debug.lkf" "vector.asm"
+<vector.asm>
+
+"e:\ti\c5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

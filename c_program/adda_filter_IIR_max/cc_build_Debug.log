@@ -1,0 +1,10 @@
+----------------------------  cexam06.pjt - Debug  ----------------------------
+[iir.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"F:/cexam/cexam06/Debug" -d"_DEBUG" -@"Debug.lkf" "iir.c"
+
+[vector.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"F:/cexam/cexam06/Debug" -d"_DEBUG" -@"Debug.lkf" "vector.asm"
+
+[Linking...] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

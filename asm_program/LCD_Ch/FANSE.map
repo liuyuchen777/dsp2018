@@ -1,0 +1,90 @@
+******************************************************************************
+TMS320C54x COFF Linker           PC Version 3.70                
+******************************************************************************
+>> Linked Fri Mar 11 09:40:09 2005
+
+OUTPUT FILE NAME:   <FANSE.out>
+ENTRY POINT SYMBOL: "RESET"  address: 00001c00
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: VECT                    00001c00   00000080  00000064  RWIX
+         EPROG                   00001d00   00003000  00000243  RWIX
+
+PAGE  1: IDATA                   00000200   00001800  00000181  RWIX
+         ISTACK                  00001a00   00000200  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    00001c00    00000064     
+                  00001c00    00000064     vectors.obj (.vectors)
+
+.text      0    00001d00    00000243     
+                  00001d00    00000243     FANSE.obj (.text)
+                  00001f43    00000000     vectors.obj (.text)
+
+.data      1    00000200    000000c1     
+                  00000200    000000c1     FANSE.obj (.data)
+                  000002c1    00000000     vectors.obj (.data)
+
+.stack     1    00001a00    00000000     UNINITIALIZED
+
+.bss       1    00000000    00000000     UNINITIALIZED
+                  00000000    00000000     FANSE.obj (.bss)
+                  00000000    00000000     vectors.obj (.bss)
+
+data       1    000002c1    000000c0     UNINITIALIZED
+                  000002c1    000000c0     FANSE.obj (data)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000000   .bss
+00000200   .data
+00001d00   .text
+00001d08   OPERATION
+00001c00   RESET
+00000000   ___bss__
+00000200   ___data__
+000002c1   ___edata__
+00000000   ___end__
+00001f43   ___etext__
+00001d00   ___text__
+00000000   __lflags
+000002c1   edata
+00000000   end
+00001f43   etext
+00001d00   start
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   ___end__
+00000000   __lflags
+00000000   ___bss__
+00000000   .bss
+00000000   end
+00000200   ___data__
+00000200   .data
+000002c1   edata
+000002c1   ___edata__
+00001c00   RESET
+00001d00   .text
+00001d00   start
+00001d00   ___text__
+00001d08   OPERATION
+00001f43   ___etext__
+00001f43   etext
+
+[16 symbols]

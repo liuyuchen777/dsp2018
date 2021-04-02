@@ -1,0 +1,7 @@
+-z -c -m"./Debug/lcdkey.map" -o"./Debug/lcdkey.out" -w -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"C:\Users\Administrator\Desktop\lcdkey\lckdkey.cmd"
+"C:\Users\Administrator\Desktop\lcdkey\Debug\lcd.obj"
+"C:\Users\Administrator\Desktop\lcdkey\Debug\ledkey.obj"
+"C:\Users\Administrator\Desktop\lcdkey\Debug\main.obj"
+"C:\Users\Administrator\Desktop\lcdkey\Debug\vectors.obj"
+"C:\CCStudio_v3.3\C5400\cgtools\lib\rts.lib"

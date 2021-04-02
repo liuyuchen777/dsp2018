@@ -1,0 +1,5 @@
+-z -q -c -o"./Debug/cexam02.out" -x -i"e:/ti/c5400/bios/lib" -i"e:/ti/c5400/rtdx/lib" -i"e:/ti/c5400/cgtools/lib"
+"D:\20PROM\cexam\cexam02\Debug\da.obj"
+"D:\20PROM\cexam\cexam02\Debug\vector.obj"
+"E:\ti\c5400\cgtools\lib\rts.lib"
+"D:\20PROM\cexam\cexam02\da.cmd"

@@ -1,0 +1,76 @@
+******************************************************************************
+TMS320C54x COFF Linker           PC Version 3.70                
+******************************************************************************
+>> Linked Wed Mar 10 15:09:23 2010
+
+OUTPUT FILE NAME:   <sub.out>
+ENTRY POINT SYMBOL: "start"  address: 00001000
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: PROG                    00001000   00001000  0000000e  RWIX
+
+PAGE  1: DATA                    00000100   00000900  00000003  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00001000    0000000e     
+                  00001000    0000000e     sub.obj (.text)
+
+sub_vars   1    00000100    00000003     UNINITIALIZED
+                  00000100    00000003     sub.obj (sub_vars)
+
+.data      1    00000000    00000000     UNINITIALIZED
+                  00000000    00000000     sub.obj (.data)
+
+.bss       1    00000000    00000000     UNINITIALIZED
+                  00000000    00000000     sub.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000000   .bss
+00000000   .data
+00001000   .text
+00000000   ___bss__
+00000000   ___data__
+00000000   ___edata__
+00000000   ___end__
+0000100e   ___etext__
+00001000   ___text__
+00000000   __lflags
+00000000   edata
+00000000   end
+0000100e   etext
+00001000   start
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   ___end__
+00000000   ___edata__
+00000000   __lflags
+00000000   end
+00000000   edata
+00000000   .data
+00000000   .bss
+00000000   ___data__
+00000000   ___bss__
+00001000   start
+00001000   ___text__
+00001000   .text
+0000100e   ___etext__
+0000100e   etext
+
+[14 symbols]

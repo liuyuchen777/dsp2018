@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\dsp_prom_19\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="keyboard.asm"
+Source="vectors.asm"
+Source="keyboard.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"E:\dsp_prom_19\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-q -o2 -fr"E:\dsp_prom_19\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v54
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v54
+
+["Linker" Settings: "Debug"]
+Options=-q -o".\Debug\dsp_prom_19.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\dsp_prom_19.out" -x
+

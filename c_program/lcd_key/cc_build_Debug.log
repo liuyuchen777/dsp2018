@@ -1,0 +1,14 @@
+-----------------------------  lcdkey.pjt - Debug  -----------------------------
+[lcd.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -fr"C:/Users/Administrator/Desktop/lcdkey/Debug" -d"_DEBUG" -@"Debug.lkf" "lcd.c"
+
+[ledkey.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -fr"C:/Users/Administrator/Desktop/lcdkey/Debug" -d"_DEBUG" -@"Debug.lkf" "ledkey.c"
+
+[main.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -fr"C:/Users/Administrator/Desktop/lcdkey/Debug" -d"_DEBUG" -@"Debug.lkf" "main.c"
+
+[vectors.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -fr"C:/Users/Administrator/Desktop/lcdkey/Debug" -d"_DEBUG" -@"Debug.lkf" "vectors.asm"
+
+[Linking...] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

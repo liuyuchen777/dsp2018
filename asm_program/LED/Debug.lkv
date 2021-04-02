@@ -1,0 +1,4 @@
+-z -q -o"./Debug/dsp_prom_18.out" -x -i"e:/ti/c5400/bios/lib" -i"e:/ti/c5400/rtdx/lib" -i"e:/ti/c5400/cgtools/lib"
+"d:\dsp_prom\dsp_asm_4\dsp_prom_18\Debug\led.obj"
+"d:\dsp_prom\dsp_asm_4\dsp_prom_18\Debug\vectors.obj"
+"D:\DSP_PROM\dsp_asm_4\dsp_prom_18\led.cmd"

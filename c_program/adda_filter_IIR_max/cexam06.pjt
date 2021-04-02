@@ -1,0 +1,38 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="cexam06"
+ProjectDir="F:\cexam\cexam06\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="C:\CCStudio_v3.3\C5400\cgtools\lib\rts.lib"
+Source="iir.c"
+Source="vector.asm"
+Source="iir.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"F:\cexam\cexam06\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-q -o2 -fr"F:\cexam\cexam06\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v54
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v54
+
+["Linker" Settings: "Debug"]
+Options=-q -c -o".\Debug\cexam06.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\cexam06.out" -x
+

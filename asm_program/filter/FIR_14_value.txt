@@ -1,0 +1,15 @@
+a1	.set	0162
+a2	.set	0000
+a3	.set	-01FF
+a4	.set	0286
+a5	.set	0000
+a6	.set	-0520
+a7	.set	0A4A
+a8	.set	18EA
+a9	.set	0A4A
+a10	.set	-0520
+a11	.set	0000
+a12	.set	0286
+a13	.set	-01FF
+a14	.set	0000
+a15	.set	0162

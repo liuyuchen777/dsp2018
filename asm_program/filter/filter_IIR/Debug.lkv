@@ -1,0 +1,3 @@
+-z -q -o"./Debug/filter.out" -x -i"c:/ti/c5400/bios/lib" -i"c:/ti/c5400/rtdx/lib" -i"c:/ti/c5400/cgtools/lib"
+"G:\d\DSP_class\prom\filter\Debug\filter.obj"
+"G:\d\DSP_class\prom\filter\filter.cmd"

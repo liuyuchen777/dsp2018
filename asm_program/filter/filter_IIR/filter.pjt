@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="filter"
+ProjectDir="F:\DSP\filter\filter_IIR\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="filter.asm"
+Source="filter.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"F:\DSP\filter\filter_IIR\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-q -o2 -fr"F:\DSP\filter\filter_IIR\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v54
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v54
+
+["Linker" Settings: "Debug"]
+Options=-q -o".\Debug\filter.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\filter.out" -x
+
